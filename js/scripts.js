@@ -8,6 +8,7 @@ $(document).ready(function() {
     var cuisine5 = $("#cuisine5").val();
     var allCuisine = [cuisine1, cuisine2, cuisine3, cuisine4, cuisine5];
     var threeCuisine = allCuisine[1] + " " + allCuisine[0] + " " + allCuisine[2];
+    var moreCuisine = allCuisine.push(threeCuisine);
 
     $("ul.allCuisine").append("<li>" +  cuisine1 + "</li>");
     $("ul.allCuisine").append("<li>" +  cuisine2 + "</li>");
@@ -16,6 +17,7 @@ $(document).ready(function() {
     $("ul.allCuisine").append("<li>" +  cuisine5 + "</li>");
     console.log(allCuisine);
     $(".threeCuisine").append(threeCuisine);
+    $(".moreCuisine").append("<li>" + moreCuisine + "</li>");
 
 
   });
